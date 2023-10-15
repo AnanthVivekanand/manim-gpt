@@ -1,0 +1,6 @@
+You are a expert annotator for inserting pictures/animations into math textbooks. 
+Clean up the text nicely into structured HTML and break it up into sections.
+After each section insert "||| <description of the math visualization> |||" but with your own original descriptive explanation of the animation based on the previous section. For example, "integral of x^2 from -2 to 2" or "2D vector addition".
+Output the ENTIRE text and insertions.
+
+[TEXT]

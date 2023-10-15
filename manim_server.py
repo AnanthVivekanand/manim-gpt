@@ -1,6 +1,6 @@
 import os
 import tempfile
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, send_from_directory
 import docker
 import json
 import base64
@@ -8,6 +8,26 @@ import openai
 import random
 
 app = Flask(__name__)
+
+base_directory = os.getcwd()
+
+@app.route('/<path:subpath>')
+def serve_file(subpath):
+    # Construct the absolute path to the requested file
+    absolute_path = os.path.join(base_directory, subpath)
+    
+    # Ensure that the requested path is within the base directory to prevent directory traversal attacks
+    if os.path.commonpath([absolute_path, base_directory]) != base_directory:
+        return "Invalid path", 403
+    
+    # Check if the requested path exists and is a file
+    if os.path.isfile(absolute_path):
+        return send_from_directory(base_directory, subpath)
+    
+    # If the path is a directory, you can customize the response as needed
+    # For example, you can list the contents of the directory or provide a custom page
+    return "File not found", 404
+
 
 @app.route('/', methods=['POST'])
 def manim():
@@ -89,7 +109,8 @@ def manim():
                 break
         
     # output video file path
-    output_path = os.path.join(os.getcwd(), "media", "videos", str(tf), "720p30", class_name) + ".mp4"
+    output_path = os.path.join("media", "videos", str(tf), "720p30", class_name) + ".mp4"
+    return output_path
 
     return send_file(output_path, mimetype='video/mp4', as_attachment=True)
 

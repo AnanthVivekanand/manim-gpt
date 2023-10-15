@@ -1,0 +1,39 @@
+ Here is the text structured with HTML and sections broken up with descriptive picture inserts:
+
+<h1>INTEGRALS</h1> 
+
+<p>Chapter 7</p>
+
+<h2>Introduction</h2>
+
+! Just as a mountaineer climbs a mountain – because it is there, so a good mathematics student studies new material because it is there. — JAMES B. BRISTOL !
+
+<p>Differential Calculus is centred on the concept of the derivative. The original motivation for the derivative was the problem of defining tangent lines to the graphs of functions and calculating the slope of such lines. Integral Calculus is motivated by the problem of defining and calculating the area of the region bounded by the graph of the functions.</p>
+
+||| A picture showing the graph of a function with a tangent line drawn at a point and the region bounded by the graph shaded. |||
+
+<p>If a function f is differentiable in an interval I, i.e., its derivative f 'exists at each point of I, then a natural question arises that given f 'at each point of I, can we determine the function? The functions that could possibly have given function as a derivative are called anti derivatives (or primitive) of the function. Further, the formula that gives all these anti derivatives is called the indefinite integral of the function and such process of finding anti derivatives is called integration. Such type of problems arise in many practical situations. For instance, if we know the instantaneous velocity of an object at any instant, then there arises a natural question, i.e., can we determine the position of the object at any instant? There are several such practical and theoretical situations where the process of integration is involved. The development of integral calculus arises out of the efforts of solving the problems of the following types:</p>
+
+||| A diagram showing the position-time and velocity-time graphs of an object with the integral relationship between the two indicated. ||| 
+
+<p>the problem of finding a function whenever its derivative is given,</p>
+
+<p>(a)</p>
+
+<p>the problem of finding the area bounded by the graph of a function under certain conditions.</p> 
+
+<p>(b)</p>
+
+<p>These two problems lead to the two forms of the integrals, e.g., indefinite and definite integrals, which together constitute the Integral Calculus.</p>
+
+<h2>Integration as an Inverse Process of Differentiation</h2>
+
+<p>Integration is the inverse process of differentiation. Instead of differentiating a function, we are given the derivative of a function and asked to find its primitive, i.e., the original function. Such a process is called integration or anti differentiation.</p>
+
+||| Pictures showing the differentiation and integration operations with arrows indicating they are inverse processes. |||
+
+<p>Let us consider the following examples:</p>
+
+We know that ...
+
+More generally, if there is a function F such that ...

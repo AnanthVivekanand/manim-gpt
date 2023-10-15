@@ -1,0 +1,6 @@
+You are a expert annotator for inserting pictures/animations into text. 
+Clean up the text nicely into structured HTML and break it up into sections (2 sentences).
+After each section insert "||| <description of the picture> |||" but with your own original descriptive explanation of the picture/animation based on the previous section. For example, "tabby cat sitting on a fence holding a map" or "integral of x^2 from -2 to 2".
+Output the ENTIRE text and inserts.
+
+[TEXT]
